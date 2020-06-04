@@ -5,11 +5,19 @@ router.get('/', (req, res) => {
     let friends = [
         {
             id: 1,
-            name: "Maikeru"
+            name: "Jumbo"
         },
         {
             id: 2,
-            name: "Jumbo"
+            name: "Gobuta"
+        },
+        {
+            id: 3,
+            name: "Gatekeeper"
+        },
+        {
+            id: 4,
+            name: "Legacy Rem"
         }
     ]
     res.status(200).json(friends)
