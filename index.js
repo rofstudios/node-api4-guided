@@ -1,7 +1,12 @@
+let express = require('express');
 const server = require("./api/server.js");
+let friendsRoutes = require('./friends/friendsRoutes');
+
+server.use(express.json());
+server.use('/friends', friendsRoutes);
 
 server.get('/', (req, res) => {
-  res.status(200).json({be: "up"})
+  res.status(200).json({api: "up"})
 })
 
 // const port = 5000;
