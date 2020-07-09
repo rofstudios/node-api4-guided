@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
             name: "Legacy Rem"
         }
     ]
-    res.status(200).json(friends)
+    res.status(200).json(friends)   
 })
 
 module.exports = router;
