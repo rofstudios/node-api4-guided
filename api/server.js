@@ -9,6 +9,7 @@ const server = express();
 server.use(helmet());
 server.use(cors());
 
+
 server.use('/api', apiRouter);
 
 module.exports = server;
